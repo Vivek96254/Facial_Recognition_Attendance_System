@@ -1,11 +1,11 @@
 # Face Authentication Attendance System
-# Core dependencies
+# Optimized for Streamlit Cloud deployment
 
 # Deep Learning & Face Recognition
 deepface>=0.0.89
-tensorflow>=2.13.0
-tf-keras  # Required for TensorFlow 2.20+ compatibility
-opencv-python>=4.8.0
+tensorflow-cpu>=2.13.0
+tf-keras
+opencv-python-headless>=4.8.0
 
 # Web Framework
 streamlit>=1.28.0
@@ -18,6 +18,3 @@ numpy>=1.24.0
 Pillow>=10.0.0
 scipy>=1.11.0
 pandas>=2.0.0
-
-# Note: DeepFace already includes retina-face for face detection
-# Don't install standalone 'retinaface' package - it has TF version conflicts
